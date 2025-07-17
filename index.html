@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My 3D Real Estate Showcase</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">3DShowcase</a>
+      <button
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section d-flex align-items-center text-white">
+    <div class="container text-center">
+      <h1 class="display-4 fw-bold">Immersive 3D Real Estate Tours</h1>
+      <p class="lead">Showcase your property with photorealistic 3D walkthroughs.</p>
+      <a href="#contact" class="btn btn-primary btn-lg">Get Started</a>
+    </div>
+  </header>
+
+  <!-- 3D Showcase -->
+ <section id="showcase" class="py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="mb-4">3D Model & Virtual Tour Demo</h2>
+
+    <div class="ratio ratio-16x9 shadow">
+      <iframe 
+        id="demoFrame"
+        src="https://www.vortigate.com/RealEstateDigitalPlatform"
+        title="Vortigate Real Estate Platform Demo"
+        style="border: 0;"
+        allow="fullscreen"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <button class="btn btn-outline-primary mt-3" onclick="openFullscreen()">Open in Fullscreen</button>
+  </div>
+</section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 text-center border-0">
+            <div class="icon my-3"><i class="bi bi-cube fs-1"></i></div>
+            <h5>Photorealistic 3D</h5>
+            <p>Render your projects with high-quality 3D models and lighting.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center border-0">
+            <div class="icon my-3"><i class="bi bi-eye fs-1"></i></div>
+            <h5>360° Virtual Tours</h5>
+            <p>Let users explore floor plans and spaces interactively.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center border-0">
+            <div class="icon my-3"><i class="bi bi-speedometer2 fs-1"></i></div>
+            <h5>Analytics & Backend</h5>
+            <p>Track engagement and connect with your CMS or CRM.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Pricing Plans</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card border-primary h-100">
+            <div class="card-body">
+              <h5 class="card-title">Basic</h5>
+              <h6 class="card-price">$2,500</h6>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>1 Project</li>
+                <li>Standard 3D Model</li>
+                <li>Email Support</li>
+              </ul>
+              <a href="#contact" class="btn btn-outline-primary">Choose Plan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-success h-100">
+            <div class="card-body">
+              <h5 class="card-title">Pro</h5>
+              <h6 class="card-price">$5,500</h6>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Up to 3 Projects</li>
+                <li>High‑Res 3D + Tour</li>
+                <li>Priority Support</li>
+              </ul>
+              <a href="#contact" class="btn btn-success">Choose Plan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-warning h-100">
+            <div class="card-body">
+              <h5 class="card-title">Enterprise</h5>
+              <h6 class="card-price">Custom</h6>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Unlimited Projects</li>
+                <li>API & CRM Integration</li>
+                <li>Dedicated Support</li>
+              </ul>
+              <a href="#contact" class="btn btn-outline-warning">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Get in Touch</h2>
+      <form class="row g-3 justify-content-center">
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Your email" required />
+        </div>
+        <div class="col-md-6">
+          <button class="btn btn-primary w-100" type="submit">Schedule a Demo</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark text-light text-center">
+    <div class="container">&copy; 2025 3DShowcase. All rights reserved.</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+  function openFullscreen() {
+    window.open("https://www.vortigate.com/RealEstateDigitalPlatform", "_blank").focus();
+  }
+</script>
+</body>
+</html>
